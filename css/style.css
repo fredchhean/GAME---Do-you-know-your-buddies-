@@ -1,0 +1,10 @@
+.title{
+  width: 100%;
+  justify-content: center;
+}
+
+#glob-pictures {
+  width: 100%;
+  justify-content: center;
+  border: solid 1px black;
+}
