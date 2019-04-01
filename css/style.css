@@ -1,12 +1,22 @@
-.title{
-  width: 100%;
-  justify-content: center;
-}
-
 #glob-pictures {
   width: 100%;
   justify-content: center;
   border: solid 1px black;
+}
+
+body{
+  font-size: 20px;
+  font-family: 'Work Sans', sans-serif;
+  color: white;
+font-weight: 300;
+text-align: center;
+background-color: #1E2433;
+}
+
+#who{
+  position: absolute;
+  margin: 300 0;
+  padding: 300 0;
 }
 
 button{
