@@ -7,7 +7,7 @@ h1{
   font-weight: 300;
   padding: 5px;
   margin-bottom: 30px;
-  font-size: 30px;
+  font-size: 50px;
   background-color: black;
   color: #fff;
 }
@@ -16,19 +16,20 @@ body{
   font-size: 20px;
   font-family: 'Work Sans', sans-serif;
   color: white;
-font-weight: 300;
-text-align: center;
-background-image: url(/Images/group_picture.jpg);
-background-attachment: fixed;
-background-repeat:no-repeat;
-background-size: cover;
+  font-weight: 300;
+  text-align: center;
+  background-image: url(/Images/group_picture.jpg);
+  background-attachment: fixed;
+  background-repeat:no-repeat;
+  background-size: cover;
 }
 
 .column {
   float: left;
   width: 32.5%;
   padding: 5px;
-  border-radius: 50px;
+  border-radius: 100px
+  cursor: pointer;
 }
 
 /* Clear floats after image containers */
@@ -36,28 +37,54 @@ background-size: cover;
   clear: both;
   display: table;
   justify-content: center;
+  margin-bottom: 20px;
 }
 
 #who{
-margin-top : 60 px;
+  font-size: 40px;
 }
 
 #quote{
-  margin-top: 10px;
+  margin-top: 0px;
+  font-size: 60px;
 }
 
-#button{
-  margin-top: 30px;
+#quote{
+  margin-bottom: 30px;
+  font-size:60px;
 }
 
-button{
+#score{
+  font-family: 'Work Sans', sans-serif;
+    font-size: 15px;
+    background-color:brown;
+    color: #fff;
+    border: 0px;
+    border-radius: 3px;
+    padding: 10px;
+    margin-top:30;
+}
+
+
+#button-next, #next{
   font-family: 'Work Sans', sans-serif;
     font-size: 22px;
     background-color: #287FB4;
     color: #fff;
     border: 0px;
     border-radius: 3px;
-    padding: 20px;
+    padding: 10px;
     cursor: pointer;
-    margin-bottom: 20px;
 }
+
+#next{
+  border-radius: 3px;
+}
+
+.game-btn {
+  outline: none;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
