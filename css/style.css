@@ -8,3 +8,15 @@
   justify-content: center;
   border: solid 1px black;
 }
+
+button{
+  font-family: 'Work Sans', sans-serif;
+    font-size: 22px;
+    background-color: #287FB4;
+    color: #fff;
+    border: 0px;
+    border-radius: 3px;
+    padding: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
