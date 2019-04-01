@@ -10,13 +10,14 @@ body{
   color: white;
 font-weight: 300;
 text-align: center;
-background-color: #1E2433;
+background-image: url(/Images/group_picture.jpg);
+background-attachment: fixed;
+background-repeat:no-repeat;
+background-size: cover;
 }
 
 #who{
-  position: absolute;
-  margin: 300 0;
-  padding: 300 0;
+
 }
 
 button{
