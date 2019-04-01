@@ -1,7 +1,15 @@
 #glob-pictures {
   width: 100%;
   justify-content: center;
-  border: solid 1px black;
+}
+
+h1{
+  font-weight: 300;
+  padding: 5px;
+  margin-bottom: 30px;
+  font-size: 30px;
+  background-color: black;
+  color: #fff;
 }
 
 body{
@@ -16,8 +24,30 @@ background-repeat:no-repeat;
 background-size: cover;
 }
 
-#who{
+.column {
+  float: left;
+  width: 32.5%;
+  padding: 5px;
+  border-radius: 50px;
+}
 
+/* Clear floats after image containers */
+.row {
+  clear: both;
+  display: table;
+  justify-content: center;
+}
+
+#who{
+margin-top : 60 px;
+}
+
+#quote{
+  margin-top: 10px;
+}
+
+#button{
+  margin-top: 30px;
 }
 
 button{
