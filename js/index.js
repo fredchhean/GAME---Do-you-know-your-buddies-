@@ -1,3 +1,6 @@
+
+
+
 let tableau = [
     ["My biggest talent is ","floss challenging","./Images/arnaud.png","./Images/susan.png","./Images/fred.png","./Images/susan.png"],
     ["If I could eat only 3 foods for the rest of life, it would be ","Ramen, Kebab, Pineapple","Ramen, Kebab, Pineapple","./Images/yang.png","./Images/miguel.png","./Images/yang.png"],
@@ -20,50 +23,59 @@ let tableau = [
     ["My guilty pleasure song is XXX","asw1","asw2","asw3","asw3"]    
 ];
 
+var gameButton = document.querySelectorAll(".game-btn");
+for(let i =0; i<gameButton.length;i++){
+    gameButton[i].onclick = getId
+}
+// gameButton.onclick = getId();
+function getId() {
+    console.log(this.childNodes[0].currentSrc)
+}
+
 
 ///////Déclaration des variables à utiliser answer photo
-var answer1 = document.getElementById('answer1');
-var answer2 = document.getElementById('answer2');
-var answer3 = document.getElementById('answer3');
-var score = document.getElementById('score');
-var goodAsw = tableau[i][5];
+// var answer1 = document.getElementById('answer1');
+// var answer2 = document.getElementById('answer2');
+// var answer3 = document.getElementById('answer3');
+// var score = document.getElementById('score');
+// var goodAsw = tableau[i][5];
 
-////
-function showQuiz{
-    tableau.forEach(function(question,quote,asw1,asw2,asw3,goodAsw){
-        var output = [xxxxxxxxx];
-        for(output === goodAsw);
+// ////
+// function showQuiz{
+//     tableau.forEach(function(question,quote,asw1,asw2,asw3,goodAsw){
+//         var output = [xxxxxxxxx];
+//         for(output === goodAsw);
 
     
 
-    })
-}
-///
+//     })
+// }
+// ///
 
-var btn = document.querySelector('input');
-
-
-
-//voir comment sont stockés les var q1 et q2// FAUT LES PUT DANS DES ARRAYS
-
-console.log(q1);
-console.log(q2);
+// var btn = document.querySelector('input');
 
 
-console.log("AZ");
 
-function showResults(){
+// //voir comment sont stockés les var q1 et q2// FAUT LES PUT DANS DES ARRAYS
 
-}
+// console.log(q1);
+// console.log(q2);
 
-function changePictures(){
 
-}
+// console.log("AZ");
 
-function builQuiz(){
+// function showResults(){
 
-}
+// }
 
-function printButton(){
+// function changePictures(){
 
-}
+// }
+
+// function builQuiz(){
+
+// }
+
+// function printButton(){
+
+// }
