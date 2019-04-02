@@ -5,11 +5,15 @@
 
 h1{
   font-weight: 300;
+  margin-bottom: 40px;
   padding: 5px;
-  margin-bottom: 30px;
   font-size: 50px;
   background-color: black;
   color: #fff;
+}
+
+.answer{
+  border: 2px solid grey;
 }
 
 body{
