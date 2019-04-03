@@ -23,14 +23,18 @@ let tableau = [
     ["My guilty pleasure song is XXX","asw1","asw2","asw3","asw3"]    
 ];
 
-var gameButton = document.querySelectorAll(".game-btn");
-for(let i =0; i<gameButton.length;i++){
-    gameButton[i].onclick = getId
-}
-// gameButton.onclick = getId();
-function getId() {
-    console.log(this.childNodes[0].currentSrc)
-}
+// ///Set the first page
+// function{
+    
+// }
+const nextButton = document.getElementsByClassName("row");
+// function(){
+
+console.log(nextButton);
+
+nextButton[0].addEventListener("click", changeAnswers);
+// nextButton[0].addEventListener("click", changeAnswers);
+// }
 
 
 ///////Déclaration des variables à utiliser answer photo
@@ -46,10 +50,52 @@ function getId() {
 //         var output = [xxxxxxxxx];
 //         for(output === goodAsw);
 
-    
 
-//     })
+///Get the button selected by the player
+var gameButton = document.querySelectorAll(".game-btn");
+for(let i =0; i<gameButton.length;i++){
+    gameButton[i].onclick = getId
+}
+// gameButton.onclick = getId();
+function getId() {
+    console.log(this.childNodes[0].id)
+    var userAsw = this.childNodes[0].id
+}
+
+///Change the quote but not wit I
+function changeTheQuote(){
+    let element = document.getElementById("quote");
+    console.log(element);
+    element.innerHTML = tableau[0][0] + tableau [0][1];
+}
+
+//Change Answers but not with I
+function changeAnswers(){
+    console.log("yu");
+    let image1 = document.getElementById("answer1");
+    image1.src = "./Images/susan.png"
+    let image2 = document.getElementById("answer2");
+    image2.src = "./Images/chris.png"
+    let image3 = document.getElementById("answer3");
+    image3.src = "./Images/arnaud.png"
+}
+
+// function updateScore(){
+//     if(var userAsw = tableau[a][6]) {
+//     score += 1
+// } 
+//     else {
+//     score = score;
 // }
+// }
+
+
+// //GOTONEXTSLIDE
+// const nextButton = document.getElementById("answer1");
+// nextButton.addEventListener("click", changeAnswers);
+
+// //     })
+// // }
 // ///
 
 // var btn = document.querySelector('input');
