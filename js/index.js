@@ -6,33 +6,23 @@ let tableau = [
     ["If I could eat only 3 foods for the rest of life, it would be ","Ramen, Kebab, Pineapple","Ramen, Kebab, Pineapple","./Images/yang.png","./Images/miguel.png","./Images/yang.png"],
     ["MMy biggest talent is ","Being humble, I'm so humble that people should call me the humble god","./Images/alex.png","./Images/yagmur.png","./Images/miguel.png","./Images/miguel.png"],
     ["My biggest talent is ","turning pop songs into country songs","./Images/fred.png","./Images/arnaud.png","./Images/alex.png","./Images/alex.png"],
-    ["My guilty pleasure song is XXX","asw1","asw2","asw3","asw3"],
-    ["My guilty pleasure song is XXX","asw1","asw2","asw3","asw3"],
-    ["My guilty pleasure song is XXX","asw1","asw2","asw3","asw3"],
-    ["My guilty pleasure song is XXX","asw1","asw2","asw3","asw3"],
-    ["My guilty pleasure song is XXX","asw1","asw2","asw3","asw3"],
-    ["My guilty pleasure song is XXX","asw1","asw2","asw3","asw3"],
     ["My guilty pleasure song is XXX","asw1","asw2","asw3","asw3"],  
-    ["My guilty pleasure song is XXX","asw1","asw2","asw3","asw3"],    
-    ["My guilty pleasure song is XXX","asw1","asw2","asw3","asw3"],    
-    ["My guilty pleasure song is XXX","asw1","asw2","asw3","asw3"],    
-    ["My guilty pleasure song is XXX","asw1","asw2","asw3","asw3"],    
-    ["My guilty pleasure song is XXX","asw1","asw2","asw3","asw3"],      
-    ["My guilty pleasure song is XXX","asw1","asw2","asw3","asw3"],    
-    ["My guilty pleasure song is XXX","asw1","asw2","asw3","asw3"],    
-    ["My guilty pleasure song is XXX","asw1","asw2","asw3","asw3"]    
 ];
 
 // ///Set the first page
-// function{
-    
+function setStep(){
+    var nextButton = document.getElementsByClassName("row");
+    nextButton[0].addEventListener("click", printAnswers);
+    nextButton[0].addEventListener("click", printTheQuote);
+}
+setStep();
+
 // }
-const nextButton = document.getElementsByClassName("row");
-// function(){
+// const nextButton = document.getElementsByClassName("row");
+// // function(){
+// console.log(nextButton);
 
-console.log(nextButton);
-
-nextButton[0].addEventListener("click", changeAnswers);
+// nextButton[0].addEventListener("click", printAnswers);
 // nextButton[0].addEventListener("click", changeAnswers);
 // }
 
@@ -44,11 +34,6 @@ nextButton[0].addEventListener("click", changeAnswers);
 // var score = document.getElementById('score');
 // var goodAsw = tableau[i][5];
 
-// ////
-// function showQuiz{
-//     tableau.forEach(function(question,quote,asw1,asw2,asw3,goodAsw){
-//         var output = [xxxxxxxxx];
-//         for(output === goodAsw);
 
 
 ///Get the button selected by the player
@@ -62,23 +47,28 @@ function getId() {
     var userAsw = this.childNodes[0].id
 }
 
-///Change the quote but not wit I
-function changeTheQuote(){
+///OOOOOOOOOOK only thing is to define i and make the loop
+function printTheQuote(){
     let element = document.getElementById("quote");
     console.log(element);
-    element.innerHTML = tableau[0][0] + tableau [0][1];
+    element.innerHTML = tableau[1][0] + tableau [1][1];
 }
 
-//Change Answers but not with I
-function changeAnswers(){
-    console.log("yu");
+//OOOOOOOOOOOOOKKKK only thing is to define i and make the loop
+function printAnswers(){
     let image1 = document.getElementById("answer1");
-    image1.src = "./Images/susan.png"
+    image1.src = tableau[1][2];
     let image2 = document.getElementById("answer2");
-    image2.src = "./Images/chris.png"
+    image2.src = tableau[1][2];
     let image3 = document.getElementById("answer3");
-    image3.src = "./Images/arnaud.png"
+    image3.src = tableau[1][2];
 }
+
+// var nextButton = document.getElementsByClassName("row");
+// // function(){
+// console.log(nextButton);
+// nextButton[0].addEventListener("click", printAnswers);
+// nextButton[0].addEventListener("click", printTheQuote);
 
 // function updateScore(){
 //     if(var userAsw = tableau[a][6]) {
