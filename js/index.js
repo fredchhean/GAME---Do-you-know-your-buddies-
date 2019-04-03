@@ -2,29 +2,38 @@
 
 
 let tableau = [
-    ["My biggest talent is ","floss challenging","./Images/arnaud.png","./Images/susan.png","./Images/fred.png","./Images/susan.png"],
-    ["If I could eat only 3 foods for the rest of life, it would be ","Ramen, Kebab, Pineapple","Ramen, Kebab, Pineapple","./Images/yang.png","./Images/miguel.png","./Images/yang.png"],
-    ["MMy biggest talent is ","Being humble, I'm so humble that people should call me the humble god","./Images/alex.png","./Images/yagmur.png","./Images/miguel.png","./Images/miguel.png"],
-    ["My biggest talent is ","turning pop songs into country songs","./Images/fred.png","./Images/arnaud.png","./Images/alex.png","./Images/alex.png"],
-    ["My guilty pleasure song is XXX","asw1","asw2","asw3","asw3"],  
+    ["My biggest talent is ","floss challenging","./Images/arnaud.png","./Images/susan.png","./Images/susan.png","./Images/susan.png"],
+    ["If I could eat only 3 foods for the rest of life, it would be ","Ramen, Kebab, Pineapple","/Images/arnaud.png","/Images/arnaud.png","/Images/arnaud.png","./Images/susan.png"],
+    // ["MMy biggest talent is ","Being humble, I'm so humble that people should call me the humble god","./Images/alex.png","./Images/yagmur.png","./Images/miguel.png","./Images/miguel.png"],
+    // ["My biggest talent is ","turning pop songs into country songs","./Images/fred.png","./Images/arnaud.png","./Images/alex.png","./Images/alex.png"],
+    // ["My guilty pleasure song is XXX","asw1","asw2","asw3","asw3"],  
 ];
 
 // ///Set the first page
+
+
+
 function setStep(){
+    for (var i = 0; i < tableau.length; i++){
     var nextButton = document.getElementsByClassName("row");
-    nextButton[0].addEventListener("click", printAnswers);
-    nextButton[0].addEventListener("click", printTheQuote);
+    nextButton[0].addEventListener("click", printImage(i));
+    // nextButton[0].addEventListener("click", printTheQuote(i));
+
+}
 }
 setStep();
+// var nextButton = document.getElementsByClassName("row");
+// nextButton[0].addEventListener("click", printImage);
+// nextButton[0].addEventListener("click", printTheQuote);
 
 // }
 // const nextButton = document.getElementsByClassName("row");
 // // function(){
 // console.log(nextButton);
 
-// nextButton[0].addEventListener("click", printAnswers);
+// nextButton[0].addEventListener("click", printImage);
 // nextButton[0].addEventListener("click", changeAnswers);
-// }
+// 
 
 
 ///////Déclaration des variables à utiliser answer photo
@@ -48,26 +57,35 @@ function getId() {
 }
 
 ///OOOOOOOOOOK only thing is to define i and make the loop
-function printTheQuote(){
+function printTheQuote(i){
+
+    // console.log(tableau[i][0]);
+    
     let element = document.getElementById("quote");
-    console.log(element);
-    element.innerHTML = tableau[1][0] + tableau [1][1];
+    console.log(element.innerHTML);
+    console.log(tableau[0]);
+    element.innerHTML = tableau[i][0] + tableau [i][1];
 }
 
 //OOOOOOOOOOOOOKKKK only thing is to define i and make the loop
-function printAnswers(){
+function printImage(i){
+    console.log(tableau[i][2]);
+
     let image1 = document.getElementById("answer1");
-    image1.src = tableau[1][2];
+    image1.src = tableau[i][2];
     let image2 = document.getElementById("answer2");
-    image2.src = tableau[1][2];
+    image2.src = tableau[i][2];
     let image3 = document.getElementById("answer3");
-    image3.src = tableau[1][2];
+    image3.src = tableau[i][2];
 }
 
+
+// console.log(tableau[2][2]);
+
 // var nextButton = document.getElementsByClassName("row");
-// // function(){
+// // // function(){
 // console.log(nextButton);
-// nextButton[0].addEventListener("click", printAnswers);
+// nextButton[0].addEventListener("click", printImage);
 // nextButton[0].addEventListener("click", printTheQuote);
 
 // function updateScore(){
