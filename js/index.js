@@ -5,12 +5,11 @@ let tableau = [
     ["My biggest talent is ", "floss challenging", "/Images/arnaud.png", "/Images/susan.png", "/Images/susan.png", "/Images/susan.png"],
     ["If I could eat only 3 foods for the rest of life, it would be ", "Ramen, Kebab, Pineapple", "/Images/arnaud.png", "/Images/susan.png", "/Images/arnaud.png", "/Images/susan.png"],
     ["My biggest talent is ", "Being humble, I'm so humble that people should call me the humble god", "./Images/susan.png", "/Images/arnaud.png", "/Images/arnaud.png", "/Images/arnaud.png"],
-    // ["My biggest talent is ","turning pop songs into country songs","./Images/fred.png","./Images/arnaud.png","./Images/alex.png","./Images/alex.png"],
-    // ["My guilty pleasure song is XXX","asw1","asw2","asw3","asw3"],  
+ 
 ];
 
 // ///Set the first page
-//OOOOOOOOOOOOOKKKK it will put the info of what images you have to print
+//----------- it will put the info of what images you have to print
 function printImage() {
     let image1 = document.getElementById("answer1");
     image1.src = tableau[gameStep][2];
@@ -20,10 +19,9 @@ function printImage() {
     image3.src = tableau[gameStep][4];
     // console.log(tableau[gameStep][2])
     // console.log("dddddddd");
-
 }
 
-//ok it will print the quote that you have to print 
+//----------------- ok it will print the quote that you have to print 
 function printTheQuote() {
     let element = document.getElementById("quote");
     // console.log(element.innerHTML);
@@ -31,18 +29,31 @@ function printTheQuote() {
     element.innerHTML = tableau[gameStep][0] + tableau[gameStep][1]
 }
 
-//Ok it will makes the step for going to the next
+//--------- Ok it will makes the step for going to the next
 function setup() {
     var nextButton = document.querySelector(".row");
-    // nextButton.addEventListener("click", function() {
-    //     printImage();
-    //     printTheQuote();
-    // });
+    nextButton.addEventListener("click", function() {
+        printImage();
+        printTheQuote();
+    });
 }
 setup();
 printImage();
+printTheQuote();
 // click on the person 
 
+
+var score = document.getElementById('score');
+console.log(score, "score")
+
+// // function updateScore(){
+// //     if(var userAsw = tableau[a][5]) {
+// //     score += 1
+// // } 
+// //     else {
+// //     score = score;
+// // }
+// // }
 
 function checkAnswer(src) {
     console.log(src)
@@ -50,19 +61,65 @@ function checkAnswer(src) {
     // tableau[gameStep].forEach()
     const answer = tableau[gameStep][tableau[gameStep].length - 1 ];
     if (src.indexOf(answer) === -1) {
-        console.log("guess again, sucka")
+        console.log("guess again, sucka");
     } else {
-        console.log("hurray !!!!")
+        console.log("hurray !!!!");
+        console.log(score);
+        score.innerHTML++
     }
     gameStep++;
     if (gameStep === tableau.length) {
+        if (src.indexOf(answer) === -1) {
+            console.log("guess again, sucka");
+        } else {
+            console.log("hurray !!!!");
+            console.log(score);
+            score.innerHTML++
+        }
         console.log("endgame");
         gameStep = 0;
         alert("yayayaya fin match")
+        
     }
     console.log(answer)
     console.log(src.indexOf(answer))
 }
+
+// var test = ["./Images/susan.png"]
+
+// var testResponse = "./Images/susan.png"
+
+// if (test[0].includes(testResponse)) {
+//     console.log("yes")
+//   // console.log(score.innerHTML);
+//    score.innerHTML++
+    
+//     console.log(score)
+// } else {
+//     console.log("no")
+// }
+
+
+// -------- TEST INCLUDES -------- 
+// ---------- SCORE ------------
+
+// var score = document.getElementById('score');
+// console.log(score, "score")
+
+
+
+
+
+// // function updateScore(){
+// //     if(var userAsw = tableau[a][5]) {
+// //     score += 1
+// // } 
+// //     else {
+// //     score = score;
+// // }
+// // }
+
+
 // var test = ["./Images/susan.png"]
 
 // var testResponse = "./Images/susan.png"
