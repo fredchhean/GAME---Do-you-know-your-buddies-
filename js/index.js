@@ -68,11 +68,15 @@ console.log(score, "score")
 // // }
 
 function checkAnswer(src) {
-    console.log(src)
+    console.log(src, "src")
     const checks = 0;
     // tableau[gameStep].forEach()
-    const answer = tableau[gameStep][tableau[gameStep].length - 1 ];
-    if (src.indexOf(answer) === -1) {
+    const answer = tableau[gameStep][tableau[gameStep].length - 1 ]
+
+console.log(answer, "answer");
+
+
+    if (src.includes(answer.substring(1)) === false) {
         console.log("guess again, sucka");
         window.alert("Wrong noob, go ask your friends for the good one!!!");
     } else {
