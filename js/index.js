@@ -1,5 +1,4 @@
 var gameStep = 0;
-
 let tableau = [
     //question, response, answer1, answer2, answer3, goodAnswer
     ["My guilty pleasure song is ", "Taylor Swift - Love story", "/Images/jules.png", "/Images/fred.png", "/Images/abi.png", "/Images/fred.png"],
@@ -75,28 +74,42 @@ function checkAnswer(src) {
     const answer = tableau[gameStep][tableau[gameStep].length - 1 ];
     if (src.indexOf(answer) === -1) {
         console.log("guess again, sucka");
+        window.alert("Wrong noob, go ask your friends for the good one!!!");
     } else {
         console.log("hurray !!!!");
         console.log(score);
-        score.innerHTML++
+        score.innerHTML++;
+        window.alert("Goood answer, you rock!!!");    
     }
     gameStep++;
-    if (gameStep === tableau.length) {
-        if (src.indexOf(answer) === -1) {
-            console.log("guess again, sucka");
-        } else {
-            console.log("hurray !!!!");
-            console.log(score);
-            score.innerHTML++
-        }
-        console.log("endgame");
-        gameStep = 0;
-        alert("yayayaya fin match")
-        
-    }
     console.log(answer)
     console.log(src.indexOf(answer))
+    if (gameStep === tableau.length) {
+        // if (src.indexOf(answer) === -1) {
+        //     console.log("guess again, sucka");
+        // } else {
+        //     console.log("hurray !!!!");
+        //     console.log(score);
+        // }
+        
+        console.log("endgame");
+        alert("You score final score is " + score.innerHTML + "! Refresh the page to try again");
+     }    
 }
+
+// if (gameStep===tableau.length){
+//     var answer1 = confirm("Try again")
+
+// }
+// // if (answer) {
+// //     //some code
+// // }
+// // else {
+// //     //some code
+// // }
+
+
+
 
 // var test = ["./Images/susan.png"]
 

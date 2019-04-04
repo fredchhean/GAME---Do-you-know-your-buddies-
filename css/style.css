@@ -10,7 +10,8 @@ h1{
   font-size: 50px;
   background-color: black;
   color: #fff;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+  font-family: "Lucida Bright", Georgia, serif; 
+  margin-top: 0px;
 }
 
 .answer{
@@ -46,17 +47,19 @@ body{
 }
 
 #who{
-  font-size: 40px;
+  font-size: 30px;
+  font-weight: bolder;
 }
 
 #affirmation{
   margin-top: 0px;
   font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #quote{
   margin-bottom: 30px;
-  font-size:40px;
+  font-size:50px;
 }
 
 #score-temp{
