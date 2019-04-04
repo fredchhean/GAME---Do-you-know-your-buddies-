@@ -1,7 +1,7 @@
 var gameStep = 0;
 let tableau = [
     //question, response, answer1, answer2, answer3, goodAnswer
-    ["My guilty pleasure song is ", "Taylor Swift - Love story", "./Images/jules.png", "./Images/fred.png", "./Images/abi.png", "./Images/fred.png"],
+    ["My guilty pleasure song is ", "Frozen - Let it go", "./Images/jules.png", "./Images/fred.png", "./Images/abi.png", "./Images/fred.png"],
     ["My biggest talent is ", "floss challenging", "./Images/arnaud.png", "./Images/susan.png", "./Images/fred.png", "./Images/susan.png"],
     ["The most beautiful place I've ever been is ", "Ironhack rooftop", "./Images/abi.png", "./Images/frank.png", "./Images/thanh.png", "./Images/frank.png"],
     ["If I could eat only 3 foods for the rest of life, it would be ", "Ramen, Kebab, Pineapple", "./Images/frank.png", "./Images/yang.png", "./Images/miguel.png", "./Images/yang.png"],
