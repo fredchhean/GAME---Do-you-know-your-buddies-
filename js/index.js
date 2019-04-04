@@ -92,8 +92,10 @@ function checkAnswer(src) {
         //     console.log(score);
         // }
         
-        console.log("endgame");
-        alert("You score final score is " + score.innerHTML + "! Refresh the page to try again");
+        console.log("End of game");
+        scoreFinal = score.innerHTML;
+        score.innerHTML = "";
+        alert("You score final score is " + scoreFinal + "! Refresh the page to try again");
      }    
 }
 
